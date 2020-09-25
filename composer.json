@@ -26,7 +26,7 @@
     ],
     "require": {
         "php": "^7.1 || ^8.0",
-        "doctrine/dbal": "^2.5.12|^3.0",
+        "doctrine/dbal": "dev-bugfix",
         "doctrine/doctrine-cache-bundle": "~1.2",
         "doctrine/persistence": "^1.3.3",
         "jdorn/sql-formatter": "^1.2.16",
@@ -40,7 +40,7 @@
     },
     "require-dev": {
         "doctrine/coding-standard": "^6.0",
-        "doctrine/orm": "^2.6",
+        "doctrine/orm": "dev-bugfix",
         "ocramius/proxy-manager": "^2.1",
         "php-coveralls/php-coveralls": "^2.1",
         "phpunit/phpunit": "^7.5",
@@ -74,5 +74,15 @@
         "branch-alias": {
             "dev-master": "1.12.x-dev"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/nobYsDarling/dbal"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/nobYsDarling/orm"
+        }
+    ]
 }
